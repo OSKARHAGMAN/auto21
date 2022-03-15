@@ -21,16 +21,7 @@ pipeline {
                     junit '**/TEST*.xml'
                 }
              }
-             stage('newman') {
-                         steps {
-                             bat 'newman run Oskar_Hagman_MT21.postman_collection --environment Oskar_Hagman_MT21_Env.postman_environment --reporters junit'
-                         }
-                         post {
-                             always {
-                                     junit '**/*xml'
-                                 }
-                             }
-                     }
+
            }
         }
     }
