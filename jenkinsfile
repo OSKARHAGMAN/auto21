@@ -34,7 +34,7 @@ pipeline {
                                 }
 stage('Robot Framework System tests with Selenium') {
             steps {
-                bat '-d Results  Tests'
+                bat 'robot -d Results  Tests'
 
             }
             post {
