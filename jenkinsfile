@@ -24,7 +24,7 @@ pipeline {
            }
                         stage('newman') {
                                     steps {
-                                        sh 'newman run Oskar_Hagman_MT21.postman_collection --environment Oskar_Hagman_MT21_Env.postman_environment --reporters junit'
+                                        bat 'newman run Oskar_Hagman_MT21.postman_collection --environment Oskar_Hagman_MT21_Env.postman_environment --reporters junit'
                                     }
                                     post {
                                         always {
