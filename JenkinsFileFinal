@@ -8,14 +8,14 @@ pipeline {
                 }
             stage ('Build'){
                 steps {
-                    bat 'mvn compile'
+                    sh 'mvn compile'
                    }
                 }
             stage ('Test'){
                 steps {
-                    bat 'mvn test'
+                    sh 'mvn test'
                 }
-               
+
             post {
                 always{
                     junit '**/TEST*.xml'
@@ -34,7 +34,7 @@ pipeline {
                           }
 stage('Robot Framework System tests with Selenium') {
             steps {
-                bat 'robot -d Results  Tests'
+                sh 'robot -d Results  Tests'
 
             }
             post {
