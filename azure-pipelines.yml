@@ -24,5 +24,7 @@ steps:
   displayName : "Java Unit Test"
   inputs:
     script: |
+      pwd
+      echo "$(Pipeline.Workspace)"
       javac auto21/src/test/java/FooTest.java /
       java - javac auto21/src/test/java/FooTest.java /
