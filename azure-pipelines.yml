@@ -25,5 +25,5 @@ steps:
   displayName : "Java Unit Test"
   inputs:
     script: |
-      javac src/test/java/FooTest.java /
-      java src/test/java/FooTest.java /
+      javac src/test/java/EmployeeTest.java
+      java src/test/java/EmployeeTest.java
