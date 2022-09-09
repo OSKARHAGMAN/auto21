@@ -24,12 +24,6 @@ steps:
   displayName : "Java Unit Test"
   inputs:
     script: |
-      cd ..
-      cd ..
-      ls
-      cd ..
-      ls
-      cd ..
       ls
       javac auto21/src/test/java/FooTest.java /
       java auto21/src/test/java/FooTest.java /
